@@ -36,7 +36,9 @@ const tabs = [
 
 <template>
   <div class="columns col-oneline p-2">
-    <h1 class="col-10" style="font-family: 'Segoe UI Mono'">Skylight</h1>
+    <h1 class="col-10" style="font-family: 'Segoe UI Mono'">didconnect</h1>
+
+
     <button
       v-if="route.name !== 'login'"
       class="btn btn-link col-ml-auto"
