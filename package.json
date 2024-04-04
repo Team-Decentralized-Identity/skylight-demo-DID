@@ -4,7 +4,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/penpenpng/skylight.git"
+    "url": "git+https://github.com/L0STCOLE/skylight.git"
   },
   "license": "MIT",
   "scripts": {
