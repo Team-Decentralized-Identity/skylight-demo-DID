@@ -27,11 +27,13 @@
             top: 0;
             left: 0;
             text-align: left;
+            display: flex; /* Add display flex to align items */
+            align-items: center; /* Align items vertically */
         }
         .login-brand {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             font-weight: bold;
-            margin-left: 20px;
+            margin-left: 10px; /* Adjusted margin-left */
         }
         .login-container {
             display: flex;
@@ -98,7 +100,9 @@
 </head>
 <body>
 
+    <!-- Added logo image within top-bar -->
     <div class="top-bar">
+        <img src="/src/assets/Filled_DIDConnect_Logo.png" alt="DIDConnect Logo" style="height: 47px;">
         <span class="login-brand">DIDConnect</span>
     </div>
 

@@ -32,11 +32,13 @@
   }
   #signUp {
     background-color: #b8d8be;
-    color: white; /* Text color for buttons */
+    color: black; /* Text color for buttons */
+    margin: 50px;
   }
   #signIn {
-    background-color: #4f4f4f; /* Dark gray, close to black */
-    color: white; /* Text color for buttons */
+    background-color: #b8d8be; 
+    color: black; /* Text color for buttons */
+    margin: -25px;
   }
   #signUp:hover, #signIn:hover {
     filter: brightness(85%);
@@ -44,8 +46,8 @@
   .logo {
     margin-bottom: 30px;
     width: auto; /* Scale automatically */
-    height: 10%; /* Logo size relative to viewport height */
-    max-height: 125px; /* Maximum size to maintain aesthetics */
+    height: 30%; /* Logo size relative to viewport height */
+    max-height: 500px; /* Maximum size to maintain aesthetics */
   }
   .footer {
     position: absolute;
@@ -55,14 +57,22 @@
     font-size: 12px;
     padding: 10px 0;
   }
+  .logo-name {
+    font-size: 4rem; /* Adjusted font size for logo name */
+    font-weight: bold;
+    margin-top: -65px; /* Adjusted margin to move closer to the logo image */
+    color: #b8d8be;
+  }
 </style>
 </head>
 <body>
 
 <img src="/src/assets/Filled_DIDConnect_Logo.png" alt="DIDConnect Logo" class="logo">
+<span class="logo-name">DIDConnect</span> <!-- Added logo name -->
 <a id="signUp" class="button">Sign Up</a>
 <a href="src/pages/login.html" id="signIn" class="button">Sign In</a>
 
+<!-- This code is not necessary:
 <div class="footer">
   <a href="#" class="footer-link">Business</a> |
   <a href="#" class="footer-link">Blog</a> |
@@ -71,9 +81,9 @@
   Language:
   <select name="languages" id="languages">
     <option value="en">English</option>
-    <!-- Add more language options here -->
   </select>
 </div>
+-->
 
 </body>
 </html>
