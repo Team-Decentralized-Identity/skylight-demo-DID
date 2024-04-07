@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#333333"> <!-- Set default theme color for dark mode -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.00001, viewport-fit=cover"/>
+    <title>DIDConnect Dashboard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        :root {
+            --text-color: #b8d8be; /* Light green text */
+            --bg-color-dark: #333333; /* Dark background */
+            --bg-color-light: #fbf5fb; /* Light background */
+        }
+
+        body {
+            background-color: var(--bg-color-dark);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 240px;
+            background-color: var(--bg-color-dark);
+            padding: 1rem;
+        }
+        .logo {
+            margin-bottom: 5px;
+            width: auto; /* Scale automatically */
+            height: 50px; /* Logo size relative to viewport height */
+            max-height: 500px; /* Maximum size to maintain aesthetics */
+          }
+
+        .sidebar .nav-link {
+            color: var(--text-color);
+            margin: 0.5rem 0;
+        }
+
+        /* Content area styling */
+        .content {
+            margin-left: 240px; /* Sidebar width */
+            padding: 1rem;
+        }
+
+        .content-header {
+            color: var(--text-color);
+            border-bottom: 1px solid var(--text-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Light/Dark mode toggle */
+        .toggle-btn {
+            cursor: pointer;
+            position: fixed; /* Fixed at the top right corner */
+            top: 1rem;
+            right: 1rem;
+            border: none;
+            background-color: var(--text-color);
+            color: var(--bg-color-dark);
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            font-size: 0.9rem;
+        }
+
+        /* Adjustments for light mode */
+        .light-mode {
+            background-color: var(--bg-color-light);
+            color: var(--bg-color-dark);
+        }
+
+        .light-mode .sidebar {
+            background-color: var(--bg-color-light);
+        }
+
+        .light-mode .content-header {
+            border-bottom-color: var(--bg-color-dark);
+        }
+
+        /* Placeholder for logo and toggle button */
+        .brand-placeholder, .toggle-placeholder {
+            background-color: var(--text-color);
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+        }
+
+        /* ... (Other styles remain unchanged) ... */
+    </style>
+</head>
+<body class="dark-mode">
+    <nav class="sidebar navbar-dark">
+        <div class="navbar-brand">
+        <img src="/src/assets/Filled_DIDConnect_Logo.png" alt="DIDConnect Logo" class="logo">         
+        <span class="brand-text">DIDConnect</span>
+        </div>
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="#">Search</a>
+        <a class="nav-link" href="#">Feeds</a>
+    </nav>
+
+    <main class="content">
+        <header class="content-header">Your Feeds</header>
+    </main>
+
+    <button class="toggle-btn" onclick="toggleTheme()"><a href=""</button>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('light-mode');
+            const themeColor = document.querySelector('meta[name="theme-color"]');
+            const currentTheme = body.classList.contains('light-mode') ? 'light' : 'dark';
+            themeColor.setAttribute('content', currentTheme === 'light' ? '#fbf5fb' : '#333333');
+        }
+    </script>
+</body>
+</html>
