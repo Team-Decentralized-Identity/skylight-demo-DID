@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/src/assets/Filled_DIDConnect_Logo.png" />
@@ -11,4 +11,137 @@
     <div id="lightbox"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/src/assets/Filled_DIDConnect_Logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIDConnect Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background-color: #333333;
+            color: #b8d8be;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .top-bar {
+            width: 100%;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: left;
+            display: flex; /* Add display flex to align items */
+            align-items: center; /* Align items vertically */
+        }
+        .login-brand {
+            font-size: 1.7rem;
+            font-weight: bold;
+            margin-left: 10px; /* Adjusted margin-left */
+        }
+        .login-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .login-title {
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 0;
+            color: #b8d8be;
+        }
+        .form-group {
+            background: none;
+            border: none;
+            border-bottom: 2px solid #b8d8be;
+            margin: 20px 0;
+            width: 300px;
+            color: #b8d8be;
+        }
+        .form-control {
+            background: none;
+            border: none;
+            outline: none;
+            color: #b8d8be;
+            margin-bottom: 1rem;
+            width: 100%;
+            font-size: 1.5rem;
+        }
+        .form-control::placeholder {
+            color: #b8d8be;
+        }
+        .login-footer {
+            margin-top: 20px;
+        }
+        .login-footer a {
+            color: #b9bbbe;
+            text-decoration: none;
+        }
+        .login-footer a:hover {
+            text-decoration: underline;
+        }
+        .submit-btn {
+            background-color: #7289da;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            display: block; /* To center the button within its container */
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content; /* Button width is as wide as its content */
+        }
+        
+        .submit-btn:hover {
+            background-color: #677bc4;
+        }
+    </style>
+ 
+</head>
+<body>
+  <script type="module" src="/src/main.ts"></script>
+
+    <!-- Added logo image within anchor tag linked to home page -->
+    <div class="top-bar">
+        <a href="https://ominous-tribble-pj7jr6wqj963497-5173.app.github.dev/skylight/"> 
+            <img src="/src/assets/Filled_DIDConnect_Logo.png" alt="DIDConnect Logo" style="height: 47px;">
+        </a>
+        <span class="login-brand">DIDConnect</span>
+    </div>
+
+    <div class="login-container">
+        <h1 class="login-title">Sign in</h1>
+
+        <form>
+            <div class="form-group">
+                <input type="text" id="identifier" class="form-control" placeholder="Email or user handle" required autofocus>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" class="form-control" placeholder="Password" required>
+            </div>
+            <div class="login-footer">
+                <button type="submit" class="submit-btn">Enter</button>
+            </div>
+        </form>
+    </div>
+
+</body>
 </html>
