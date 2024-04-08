@@ -17,7 +17,7 @@ const tabs = [
   },
   {
     routeName: "notifications",
-    label: "Noti",
+    label: "Notifications",
   },
   {
     routeName: "search",
@@ -36,8 +36,12 @@ const tabs = [
 
 <template>
   <div class="columns col-oneline p-2">
-    <h1 class="col-10" style="font-family: 'Segoe UI Mono'">didconnect</h1>
-
+    <div class="top-bar">
+        <a href="https://ominous-tribble-pj7jr6wqj963497-5173.app.github.dev/skylight/"> 
+            <img src="/src/assets/Filled_DIDConnect_Logo.png" alt="DIDConnect Logo" style="height: 47px;">
+        </a>
+        <span class="login-brand">DIDConnect</span>
+    </div>
 
     <button
       v-if="route.name !== 'login'"

@@ -12,9 +12,11 @@
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<div class="body"></div>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="/src/assets/Filled_DIDConnect_Logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,6 +27,7 @@
         * {
             box-sizing: border-box;
         }
+      
         body, html {
             height: 100%;
             margin: 0;
@@ -36,6 +39,10 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+        }
+        .body
+        {
+            background: #333333;
         }
         .top-bar {
             width: 100%;
@@ -117,31 +124,9 @@
  
 </head>
 <body>
-  <script type="module" src="/src/main.ts"></script>
-
-    <!-- Added logo image within anchor tag linked to home page -->
-    <div class="top-bar">
-        <a href="https://ominous-tribble-pj7jr6wqj963497-5173.app.github.dev/skylight/"> 
-            <img src="/src/assets/Filled_DIDConnect_Logo.png" alt="DIDConnect Logo" style="height: 47px;">
-        </a>
-        <span class="login-brand">DIDConnect</span>
-    </div>
-
-    <div class="login-container">
-        <h1 class="login-title">Sign in</h1>
-
-        <form>
-            <div class="form-group">
-                <input type="text" id="identifier" class="form-control" placeholder="Email or user handle" required autofocus>
-            </div>
-            <div class="form-group">
-                <input type="password" id="password" class="form-control" placeholder="Password" required>
-            </div>
-            <div class="login-footer">
-                <button type="submit" class="submit-btn">Enter</button>
-            </div>
-        </form>
-    </div>
+    
+<div id="app"></div> 
+<script type="module" src="/src/main.ts"></script> 
 
 </body>
 </html>
