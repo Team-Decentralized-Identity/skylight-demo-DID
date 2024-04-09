@@ -35,34 +35,29 @@ const tabs = [
 </script>
 
 <template>
-  <div class="columns col-oneline p-2">
-    <div class="top-bar">
-        <a href="https://ominous-tribble-pj7jr6wqj963497-5173.app.github.dev/skylight/"> 
-            <img src="/src/assets/Filled_DIDConnect_Logo.png" alt="DIDConnect Logo" style="height: 47px;">
-        </a>
+  <div>
+    <div v-if="route.name !== 'main'" class="columns col-oneline p-2">
+      <div class="top-bar">
+          <img src="/src/assets/Filled_DIDConnect_Logo.png" alt="DIDConnect Logo" style="height: 47px;">
         <span class="login-brand">DIDConnect</span>
+      </div>
+      <button v-if="route.name !== 'login'" class="btn btn-link col-ml-auto" @click="logout">
+        Logout
+      </button>
     </div>
 
-    <button
-      v-if="route.name !== 'login'"
-      class="btn btn-link col-ml-auto"
-      @click="logout"
-    >
-      Logout
-    </button>
-  </div>
-
-  <div class="sticky-area">
-    <ul v-if="route.name !== 'login'" class="tab">
-      <li
-        v-for="({ routeName, label }, idx) in tabs"
-        :key="idx"
-        class="tab-item"
-        :class="{ active: route.name === routeName }"
-      >
-        <RouterLink :to="{ name: routeName }">{{ label }}</RouterLink>
-      </li>
-    </ul>
+    <div class="sticky-area">
+      <ul v-if="route.name !== 'main' && route.name !== 'login'" class="tab">
+        <li
+          v-for="({ routeName, label }, idx) in tabs"
+          :key="idx"
+          class="tab-item"
+          :class="{ active: route.name === routeName }"
+        >
+          <RouterLink :to="{ name: routeName }">{{ label }}</RouterLink>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 

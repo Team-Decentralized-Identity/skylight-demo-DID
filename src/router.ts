@@ -3,6 +3,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import { getMyHandle } from "@/lib/bsky";
 import PageIndex from "@/pages/PageIndex.vue";
 import PageLogin from "@/pages/PageLogin.vue";
+import PageMain from "@/pages/PageMain.vue";
 import PageNoti from "@/pages/PageNoti.vue";
 import PageProfile from "@/pages/PageProfile.vue";
 import PageSearchUser from "@/pages/PageSearchUser.vue";
@@ -13,6 +14,11 @@ import { resolveDidToHandleForNavigationGuard } from "./lib/query";
 export const router = createRouter({
   history: createWebHashHistory("/skylight/"),
   routes: [
+    {
+      name: "main",
+      path: "/main",
+      component: PageMain,
+    },
     {
       name: "login",
       path: "/login",
