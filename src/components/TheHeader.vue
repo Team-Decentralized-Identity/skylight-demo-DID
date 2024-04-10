@@ -9,7 +9,6 @@ const logout = () => {
   deleteSession();
   location.reload();
 };
-//hello
 
 const tabs = [
   {
