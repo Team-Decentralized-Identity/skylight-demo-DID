@@ -76,7 +76,7 @@
   <span class="logo-name">DIDConnect</span> <!-- Centered logo name -->
   <div class="button-group">
     <a id="signUp" class="button">Sign Up</a>
-    <a href="https://symmetrical-robot-g9pjrv755xrhqgg-5173.app.github.dev/skylight/#/login" id="signIn" class="button">Sign In</a>
+    <a href="/login" @click.prevent="$router.push('/login')" id="signIn" class="button">Sign In</a>
   </div>
 </div>
 
