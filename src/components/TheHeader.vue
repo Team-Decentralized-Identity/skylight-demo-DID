@@ -44,28 +44,51 @@ const tabs = [
       <button v-if="route.name !== 'login'" class="btn btn-link col-ml-auto" @click="logout">
         Logout
       </button>
-    </div>
 
-    <div class="sticky-area">
-      <ul v-if="route.name !== 'main' && route.name !== 'login'" class="tab">
-        <li
-          v-for="({ routeName, label }, idx) in tabs"
-          :key="idx"
-          class="tab-item"
-          :class="{ active: route.name === routeName }"
-        >
-          <RouterLink :to="{ name: routeName }">{{ label }}</RouterLink>
-        </li>
-      </ul>
-    </div>
+    <!-- Navigation Bar -->
+  <aside class="navigation">
+    <ul class="nav-list">
+      <li v-for="tab in tabs" :key="tab.routeName" v-if="route.name !== 'login'">
+        <RouterLink :to="{ name: tab.routeName }">
+        {{ tab.label }}
+        </RouterLink>
+      </li>
+    </ul>
+  </aside>
   </div>
+</div>
 </template>
 
 <style scoped>
-.sticky-area {
-  background-color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+body {
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navigation Bar */
+.navigation {
+  position: fixed;
+  top: 8vh; /* Adjust this value to move the navigation down */
+  left: 0;
+  width: var(--nav-width);
+  height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a {
+  display: block;
+  padding: 0.5em 0;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.5rem; /* Increase the font size here */
 }
 </style>
+
+
