@@ -38,7 +38,7 @@ const tabs = [
   <div>
     <div v-if="route.name !== 'main'" class="columns col-oneline p-2">
       <div class="top-bar">
-          <img src="/src/assets/Filled_DIDConnect_Logo.png" alt="DIDConnect Logo" style="height: 47px;">
+          <img src="/src/assets/Filled_DIDConnect_Logo.png" alt="DIDConnect Logo" style="height: 65px;">
         <span class="login-brand">DIDConnect</span>
       </div>
       <button v-if="route.name !== 'login'" class="btn btn-link col-ml-auto" @click="logout">
