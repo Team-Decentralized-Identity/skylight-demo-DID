@@ -1,14 +1,7 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
 
-import { deleteSession } from "@/lib/bsky";
-
 const route = useRoute();
-
-const logout = () => {
-  deleteSession();
-  location.reload();
-};
 
 const tabs = [
   {
@@ -38,25 +31,23 @@ const tabs = [
   <div>
     <div v-if="route.name !== 'main'" class="columns col-oneline p-2">
       <div class="top-bar">
-          <img src="/src/assets/Filled_DIDConnect_Logo.png" alt="DIDConnect Logo" style="height: 65px;">
+        <img src="/src/assets/Filled_DIDConnect_Logo.png" alt="DIDConnect Logo" style="height: 65px;">
         <span class="login-brand">DIDConnect</span>
       </div>
-      <button v-if="route.name !== 'login'" class="btn btn-link col-ml-auto" @click="logout">
-        Logout
-      </button>
 
-    <!-- Navigation Bar -->
-  <aside class="navigation">
-    <ul class="nav-list">
-      <li v-for="tab in tabs" :key="tab.routeName" v-if="route.name !== 'login'">
-        <RouterLink :to="{ name: tab.routeName }">
-        {{ tab.label }}
-        </RouterLink>
-      </li>
-    </ul>
-  </aside>
+      <!-- Navigation Bar -->
+      <aside class="navigation">
+        <ul class="nav-list">
+          <li v-for="tab in tabs" :key="tab.routeName" v-if="route.name !== 'login'">
+            <RouterLink :to="{ name: tab.routeName }">
+              {{ tab.label }}
+            </RouterLink>
+          </li>
+         
+        </ul>
+      </aside>
+    </div>
   </div>
-</div>
 </template>
 
 <style scoped>
@@ -68,12 +59,13 @@ body {
 /* Navigation Bar */
 .navigation {
   position: fixed;
-  top: 8vh; /* Adjust this value to move the navigation down */
-  left: 1.2%; /* Increase this value to move it to the right */
+  top: 8vh;
+  left: 1.2%; 
   width: var(--nav-width);
   height: 100vh;
   padding: 1rem;
   box-sizing: border-box;
+  cursor: pointer
 }
 
 .nav-list {
@@ -83,10 +75,27 @@ body {
 }
 
 .nav-list li a {
-  display: block;
-  padding: 0.5em 0;
-  color: inherit;
-  text-decoration: none;
-  font-size: 1.5rem; /* Increase the font size here */
+ width: 100%; 
+  text-align: left; 
+  padding: 0; 
+  color: inherit; 
+  background: none; 
+  border: none; 
+  font-size: 1.5rem; 
+  cursor: pointer; 
+  left: 1.2%;
+}
+
+.logout-button {
+  width: 100%;
+  text-align: left;
+  padding: 0; 
+  color: inherit; 
+  background: none; 
+  border: none; 
+  font-size: 1.5rem; 
+  cursor: pointer; 
+  left: 1.2%;
+  text-decoration: none
 }
 </style>
