@@ -62,8 +62,8 @@ const logout = () => {
 .btn-link.logout-button {
   padding: 8px 16px; 
   font-size: 16px; 
-  background-image: linear-gradient(145deg, #48aa6f, #7289da); 
-  color: white;
+  background-image: linear-gradient(145deg, #48aa6f, #fbf5eb); 
+  color: black;
   border: none; 
   border-radius: 5px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
@@ -72,15 +72,15 @@ const logout = () => {
   margin-top: 30px;
 }
 .btn-link.logout-button:hover, .btn-link.logout-button:focus {
-  background-image: linear-gradient(to right, #7289da, #48aa6f); 
+  background-image: linear-gradient(to right, #fbf5eb, #48aa6f); 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
 }
 
 .btn-link.change-handle {
   padding: 8px 16px; 
   font-size: 16px; 
-  background-image: linear-gradient(145deg, #48aa6f, #7289da); 
-  color: white;
+  background-image: linear-gradient(145deg, #48aa6f, #fbf5eb); 
+  color: black;
   border: none; 
   border-radius: 5px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
@@ -89,7 +89,7 @@ const logout = () => {
   margin-top: .9em; 
 }
   .btn-link.change-handle:hover .btn-link.change-handle:focus {
-  background-image: linear-gradient(to right, #7289da, #48aa6f); 
+  background-image: linear-gradient(to right, #fbf5eb, #48aa6f); 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 </style>
