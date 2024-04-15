@@ -1,5 +1,5 @@
-# Skylight
+# DIDConnect
 
-DIDConnect a bluesky client
+It is a bluesky client
 
 https://penpenpng.github.io/skylight/
