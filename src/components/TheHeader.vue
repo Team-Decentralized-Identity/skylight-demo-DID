@@ -84,6 +84,20 @@ body {
   font-size: 1.5rem; 
   cursor: pointer; 
   left: 1.2%;
+  text-decoration: none;
+}
+
+.nav-list li a:hover {
+ width: 100%; 
+  text-align: left; 
+  padding: 0; 
+  color: inherit; 
+  border: none; 
+  font-size: 1.5rem; 
+  cursor: pointer; 
+  left: 1.2%;
+  text-decoration: none;
+  background: #3e423e;
 }
 
 .logout-button {

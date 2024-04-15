@@ -57,6 +57,6 @@ const submit = async () => {
 
 <style scoped>
 .tile:hover {
-  background: #f1f1fc;
+  background: #3e423e;
 }
 </style>
