@@ -75,10 +75,10 @@ body {
 }
 
 .nav-list li a {
- width: 100%; 
+  width: 100%; 
   text-align: left; 
   padding: 0; 
-  color: inherit; 
+  color: #b8d8be; 
   background: none; 
   border: none; 
   font-size: 1.5rem; 
@@ -88,7 +88,7 @@ body {
 }
 
 .nav-list li a:hover {
- width: 100%; 
+  width: 100%; 
   text-align: left; 
   padding: 0; 
   color: inherit; 
@@ -97,7 +97,7 @@ body {
   cursor: pointer; 
   left: 1.2%;
   text-decoration: none;
-  background: #3e423e;
+  /* background: #3e423e; */
 }
 
 .logout-button {

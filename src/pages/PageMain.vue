@@ -56,7 +56,7 @@
     font-size: 4rem; /* Adjusted font size for logo name */
     font-weight: bold;
     margin-top: -140px; /* Adjust if necessary to align with the logo */
-    color: #b8d8be;
+    color: #fbf5eb;
   }
 </style>
 
