@@ -1,3 +1,3 @@
 # DIDConnect
 
-It is a bluesky client
+It is a Bluesky client
