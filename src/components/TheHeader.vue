@@ -54,6 +54,20 @@ const tabs = [
 body {
   margin: 0;
   transition: background-color 0.3s, color 0.3s;
+} 
+
+/* Top Logo Bar */
+.top-bar {
+  position: fixed;
+  top: 0;  
+  left: 0; 
+  width: 100%; 
+  height: 105px; 
+  padding: 1rem;
+  box-sizing: border-box;
+  z-index: 1000; 
+  cursor: pointer;
+  transition: top 0.3s; 
 }
 
 /* Navigation Bar */

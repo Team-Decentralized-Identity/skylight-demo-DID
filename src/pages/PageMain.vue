@@ -37,7 +37,7 @@
 
   .logo {
     display: block; /* Change this to block to allow margin auto to center */
-    margin: 0 auto 60px auto; /* Center horizontally and add margin bottom */
+    margin: 150px auto 60px auto; /* Center horizontally and add margin bottom */
     max-height: 400px; /* Maximum size to maintain aesthetics */
   }
 
