@@ -65,7 +65,6 @@ body {
   height: 105px; 
   padding: 1rem;
   box-sizing: border-box;
-  z-index: 1000; 
   cursor: pointer;
   transition: top 0.3s; 
 }
@@ -92,7 +91,7 @@ body {
   width: 100%; 
   text-align: left; 
   padding: 0; 
-  color: #b8d8be; 
+  color: #b8d8be !important; 
   background: none; 
   border: none; 
   font-size: 1.5rem; 
@@ -105,7 +104,7 @@ body {
   width: 100%; 
   text-align: left; 
   padding: 0; 
-  color: inherit; 
+  color: inherit !important; 
   border: none; 
   font-size: 1.5rem; 
   cursor: pointer; 

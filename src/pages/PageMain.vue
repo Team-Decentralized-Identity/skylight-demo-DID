@@ -20,14 +20,14 @@
 
   #signUp {
     background-color: #b8d8be;
-    color: black; /* Text color for buttons */
+    color: black !important; /* Text color for buttons */
     text-decoration: none; /* Remove underline from links */
     margin-top: 30px;
   }
 
   #signIn {
     background-color: #b8d8be;
-    color: black; /* Text color for buttons */
+    color: black !important; /* Text color for buttons */
     text-decoration: none; /* Remove underline from links */
   }
 

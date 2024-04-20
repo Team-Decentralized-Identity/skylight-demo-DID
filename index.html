@@ -84,7 +84,14 @@
             text-decoration: none;
         }
         .login-footer a:hover {
-            text-decoration: underline;
+            text-decoration: none;
+            color: #b8d8be;
+        }
+        a:visited {
+            color:#b8d8be;
+        }
+        a {
+            color:#b8d8be !important;
         }
         .submit-btn {
             background-color: #b8d8be;
@@ -139,15 +146,20 @@
         }
 
         .btn.btn-link {
-            color: #b8d8be;
+            color: #b8d8be !important;
+            border: none;
+        }
+
+        .btn.btn-link:hover {
+            color: black !important;
         }
 
         .menu {
             color: black;
-            background: #b8d8be;
+            background: #222222;
         }
 
-        .modal-container {
+        .modal-container:hover {
             color: black;
         }
 
@@ -162,14 +174,29 @@
         }
 
         .tab .tab-item.active a {
-            border-bottom-color: #b8d8be;
-            color: #b8d8be;
+            border-bottom-color: #fbf5eb;
+            color: #fbf5eb !important;
         }  
 
         .form-switch input:checked + .form-icon {
             background: green;
             border-color: green;
         }  
+
+        p, p code {
+        color: black; 
+        }
+        
+        code {
+        color: red !important; 
+        }
+
+        .line-clamp-1 {
+        color: black;
+        }
+        .line-clamp-3 {
+        color: black;
+        }
     </style>
  
 </head>
