@@ -38,7 +38,7 @@ const tabs = [
       <!-- Navigation Bar -->
       <aside class="navigation">
         <ul class="nav-list">
-          <li v-for="tab in tabs" :key="tab.routeName" v-if="route.name !== 'login'">
+          <li v-for="tab in tabs" :key="tab.routeName" v-if="route.name !== 'login' && route.name !== 'sign'">
             <RouterLink :to="{ name: tab.routeName }">
               {{ tab.label }}
             </RouterLink>

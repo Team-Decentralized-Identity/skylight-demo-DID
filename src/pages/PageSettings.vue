@@ -43,6 +43,13 @@ const logout = () => {
 </ButtonAsync>
 
   </div>
+  
+<div>
+  <button class="btn btn-link migrate-button" @click="migrate">
+  Account Migration
+  </button>
+</div>
+
 <button class="btn btn-link logout-button" @click="logout">
   Logout
 </button>
@@ -60,6 +67,19 @@ const logout = () => {
 
 <style scoped>
 .btn-link.logout-button {
+  padding: 8px 16px; 
+  font-size: 16px; 
+  background-image: linear-gradient(145deg, #b8d8be, #b8d8be); 
+  color: black !important;
+  border: none; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  transition: all 0.3s ease; 
+  cursor: pointer; 
+  margin-top: 30px;
+}
+
+.btn-link.migrate-button {
   padding: 8px 16px; 
   font-size: 16px; 
   background-image: linear-gradient(145deg, #b8d8be, #b8d8be); 
